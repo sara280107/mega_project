@@ -66,6 +66,7 @@ flutter:
       - assets/car1.jpeg
       - assets/car2.jpg
       - assets/car3.jpg
+      - assets/car.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

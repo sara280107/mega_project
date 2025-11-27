@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
                   // ---------- TOP IMAGE ----------
                   SizedBox(
                     height: 140,
-                    child: Image.asset("assets/car_parking.jpeg"),
+                    child: Image.asset("assets/car.jpg"),
                     // Use your image asset here
                   ),
 
@@ -35,7 +35,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 5),
 
                   // ---------- WHITE CARD ----------
                   Container(
@@ -53,6 +53,20 @@ class LoginScreen extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
+                        //----name field----
+
+                        TextField(
+                          decoration: InputDecoration(
+                            hintText: "Name",
+                            prefixIcon: Icon(Icons.person_outline),   // ⭐ Added icon
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
+
+
+                        const SizedBox(height: 15),
                         // ----- Email field -----
                         TextField(
                           decoration: InputDecoration(
@@ -77,12 +91,27 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                         ),
+
+                        const SizedBox(height: 15),
+
+                        //---vehicle no----
+                        TextField(
+                          decoration: InputDecoration(
+                            hintText: "Vehicle No",
+                            prefixIcon: Icon(Icons.directions_car_outlined),  // ⭐ Added icon
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                        ),
+
                       ],
                     ),
                   ),
 
+
                   const SizedBox(height: 25),
-              // ---------- LOGIN (Blue Button) ----------
+                  // ---------- LOGIN (Blue Button) ----------
                   SizedBox(
                     width: double.infinity,
                     height: 50,
@@ -119,10 +148,10 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 18),
+                  const SizedBox(height: 2),
 
 
-            // ---------- CONTINUE AS GUEST (Green Button) ----------
+                  // ---------- CONTINUE AS GUEST (Green Button) ----------
                   SizedBox(
                     width: double.infinity,
                     height: 50,
